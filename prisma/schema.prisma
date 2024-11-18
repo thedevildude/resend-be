@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Message {
+  id    String     @id @default(uuid())
+  recipient_email String  @unique
+  sender_email  String
+  message String @db.Text
+  subject String? @db.VarChar(200)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  status MessageStatus @default(INQUEUE)
+}
+
+enum MessageStatus {
+  INQUEUE
+  SENT
+}

@@ -9,7 +9,7 @@ datasource db {
 
 model Message {
   id    String     @id @default(uuid())
-  recipient_email String  @unique
+  recipient_email String
   sender_email  String
   message String @db.Text
   subject String? @db.VarChar(200)

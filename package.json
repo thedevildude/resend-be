@@ -27,9 +27,10 @@
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.7",
     "pm2": "^5.4.3",
+    "prisma": "^5.22.0",
+    "rimraf": "^6.0.1",
     "winston": "^3.17.0",
-    "xss-filters": "^1.2.7",
-    "rimraf": "^6.0.1"
+    "xss-filters": "^1.2.7"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",

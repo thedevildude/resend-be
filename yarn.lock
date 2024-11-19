@@ -1684,7 +1684,7 @@ pm2-sysmonit@^1.2.8:
 
 pm2@^5.4.3:
   version "5.4.3"
-  resolved "https://registry.npmjs.org/pm2/-/pm2-5.4.3.tgz"
+  resolved "https://registry.yarnpkg.com/pm2/-/pm2-5.4.3.tgz#4d8c456c7aa2f5dd59714fd130e9c2f1d924e86e"
   integrity sha512-4/I1htIHzZk1Y67UgOCo4F1cJtas1kSds31N8zN0PybO230id1nigyjGuGFzUnGmUFPmrJ0On22fO1ChFlp7VQ==
   dependencies:
     "@pm2/agent" "~2.0.0"

@@ -16,9 +16,17 @@ model Message {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   status MessageStatus @default(INQUEUE)
+  duration MessageDuration @default(TWELVE)
 }
 
 enum MessageStatus {
   INQUEUE
   SENT
+}
+
+enum MessageDuration {
+  ONE
+  THREE
+  SIX
+  TWELVE
 }

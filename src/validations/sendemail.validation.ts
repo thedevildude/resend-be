@@ -6,6 +6,7 @@ const sendEmail = {
     recipient_email: Joi.string().email().required(),
     message: Joi.string().required().max(1000),
     subject: Joi.string().optional().max(200),
+    duration: Joi.string().optional()
   }),
 };
 
